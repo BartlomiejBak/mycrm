@@ -33,6 +33,10 @@
     <h3>Save customer</h3>
 
     <form:form action="saveCustomer" modelAttribute="customer" method="post">
+
+        <!-- line responsible for updating/getting id -->
+        <form:hidden path="id"/>
+
         <table>
             <tbody>
             <tr>
