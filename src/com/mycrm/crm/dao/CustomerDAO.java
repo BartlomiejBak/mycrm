@@ -5,6 +5,5 @@ import com.mycrm.crm.entity.Customer;
 import java.util.List;
 
 public interface CustomerDAO {
-
-    public List<Customer> getCustomers();
+    List<Customer> getCustomers();
 }
