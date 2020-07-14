@@ -11,6 +11,7 @@ import java.util.List;
 
 @Repository
 public class CustomerDAOImpl implements CustomerDAO {
+
     @Autowired
     private SessionFactory sessionFactory;
 
@@ -34,5 +35,14 @@ public class CustomerDAOImpl implements CustomerDAO {
         Session session = sessionFactory.getCurrentSession();
         Customer customer = session.get(Customer.class, theId);
         return customer;
+    }
+
+    @Override
+    public void deleteCustomer(int id) {
+        Customer toBeDeletedCustomer = getCustomer(id);
+        if (toBeDeletedCustomer != null) {
+            Session session = sessionFactory.getCurrentSession();
+            session.delete(toBeDeletedCustomer);
+        }
     }
 }
