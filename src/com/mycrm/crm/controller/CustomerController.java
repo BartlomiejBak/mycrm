@@ -1,6 +1,5 @@
 package com.mycrm.crm.controller;
 
-import com.mycrm.crm.dao.CustomerDAO;
 import com.mycrm.crm.entity.Customer;
 import com.mycrm.crm.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;

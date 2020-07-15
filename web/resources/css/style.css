@@ -35,8 +35,7 @@ tr:nth-child(odd) {background: #BBBBBB}
 
 .add-button {
 	border: 1px solid #666; 
-	border-radius: 5px; 
-	padding: 4px; 
+	border-radius: 5px;
 	font-size: 12px;
 	font-weight: bold;
 	width: 120px; 
